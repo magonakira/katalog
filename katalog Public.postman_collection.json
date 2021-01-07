@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "fdce8bac-9eec-4166-b545-0e77df1dfcee",
+		"name": "katalog Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get web",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-34-224-8-228.compute-1.amazonaws.com:8000",
+					"protocol": "http",
+					"host": [
+						"ec2-34-224-8-228",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read datas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-34-224-8-228.compute-1.amazonaws.com:8000/api/katalog/datas/",
+					"protocol": "http",
+					"host": [
+						"ec2-34-224-8-228",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"katalog",
+						"datas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read data_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-34-224-8-228.compute-1.amazonaws.com:8000/api/katalog/read?idkatalog=LK202100001",
+					"protocol": "http",
+					"host": [
+						"ec2-34-224-8-228",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"katalog",
+						"read"
+					],
+					"query": [
+						{
+							"key": "idkatalog",
+							"value": "LK202100001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-34-224-8-228.compute-1.amazonaws.com:8000/api/katalog/add?tahun=2013&judul=Accuracy Evaluation Orthorectification of SPOT Image&penulis1=Sarip Hidayat&penulis2=Wiweka&penulis3&penulis4&penulis5&penulis6&penerbit=ICT for Smart Society (ICISS), 2013 International Conference&tanggal=2013-06-14&halaman=237-246&namafile&linkpublikasi=http://ieeexplore.ieee.org/document/6588096/&nomorregistrasi=",
+					"protocol": "http",
+					"host": [
+						"ec2-34-224-8-228",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"katalog",
+						"add"
+					],
+					"query": [
+						{
+							"key": "tahun",
+							"value": "2013"
+						},
+						{
+							"key": "judul",
+							"value": "Accuracy Evaluation Orthorectification of SPOT Image"
+						},
+						{
+							"key": "penulis1",
+							"value": "Sarip Hidayat"
+						},
+						{
+							"key": "penulis2",
+							"value": "Wiweka"
+						},
+						{
+							"key": "penulis3",
+							"value": null
+						},
+						{
+							"key": "penulis4",
+							"value": null
+						},
+						{
+							"key": "penulis5",
+							"value": null
+						},
+						{
+							"key": "penulis6",
+							"value": null
+						},
+						{
+							"key": "penerbit",
+							"value": "ICT for Smart Society (ICISS), 2013 International Conference"
+						},
+						{
+							"key": "tanggal",
+							"value": "2013-06-14"
+						},
+						{
+							"key": "halaman",
+							"value": "237-246"
+						},
+						{
+							"key": "namafile",
+							"value": null
+						},
+						{
+							"key": "linkpublikasi",
+							"value": "http://ieeexplore.ieee.org/document/6588096/"
+						},
+						{
+							"key": "nomorregistrasi",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-34-224-8-228.compute-1.amazonaws.com:8000/api/katalog/update?idkatalog=LK202100004&tahun=2013&judul=Accuracy Evaluation Orthorectification of SPOT Image&penulis1=Sarip Hidayat&penulis2=Wiweka&penulis3&penulis4&penulis5&penulis6&penerbit=ICT for Smart Society (ICISS), 2013 International Conference&tanggal=2013-06-14&halaman=237-246&namafile&linkpublikasi=http://ieeexplore.ieee.org/document/6588096/&nomorregistrasi=03/2017/PNL",
+					"protocol": "http",
+					"host": [
+						"ec2-34-224-8-228",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"katalog",
+						"update"
+					],
+					"query": [
+						{
+							"key": "idkatalog",
+							"value": "LK202100004"
+						},
+						{
+							"key": "tahun",
+							"value": "2013"
+						},
+						{
+							"key": "judul",
+							"value": "Accuracy Evaluation Orthorectification of SPOT Image"
+						},
+						{
+							"key": "penulis1",
+							"value": "Sarip Hidayat"
+						},
+						{
+							"key": "penulis2",
+							"value": "Wiweka"
+						},
+						{
+							"key": "penulis3",
+							"value": null
+						},
+						{
+							"key": "penulis4",
+							"value": null
+						},
+						{
+							"key": "penulis5",
+							"value": null
+						},
+						{
+							"key": "penulis6",
+							"value": null
+						},
+						{
+							"key": "penerbit",
+							"value": "ICT for Smart Society (ICISS), 2013 International Conference"
+						},
+						{
+							"key": "tanggal",
+							"value": "2013-06-14"
+						},
+						{
+							"key": "halaman",
+							"value": "237-246"
+						},
+						{
+							"key": "namafile",
+							"value": null
+						},
+						{
+							"key": "linkpublikasi",
+							"value": "http://ieeexplore.ieee.org/document/6588096/"
+						},
+						{
+							"key": "nomorregistrasi",
+							"value": "03/2017/PNL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-34-224-8-228.compute-1.amazonaws.com:8000/api/katalog/delete?idkatalog=LK202100002",
+					"protocol": "http",
+					"host": [
+						"ec2-34-224-8-228",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"katalog",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "idkatalog",
+							"value": "LK202100002"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
